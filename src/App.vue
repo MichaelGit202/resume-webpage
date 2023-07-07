@@ -1,4 +1,5 @@
 <template>
+  <div>this is the app</div>
   <testComp></testComp>
 </template>
 
