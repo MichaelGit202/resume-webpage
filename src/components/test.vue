@@ -1,5 +1,5 @@
 <template>
-  <h>hello github</h>
+  <h></h>
 </template>
 
 <script lang="ts">

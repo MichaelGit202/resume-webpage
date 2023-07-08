@@ -1,16 +1,18 @@
 <template>
-  <div>this is the app</div>
+  <headerbio></headerbio>
   <testComp></testComp>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
 import testComp from './components/test.vue';
+import headerbio from './components/headerBio.vue';
 
 export default defineComponent({
   name: 'App',
   components: {
-    testComp
+    testComp,
+    headerbio
   }
 });
 </script>
