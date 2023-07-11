@@ -46,10 +46,11 @@ h1{
 
 
 #bio{
+  background:#3F2E3E;
   margin:20px;
   border: 1px solid black;
   border-radius: 5%;
-  box-shadow: 7px 7px 0px 0px rgba(0,0,0,100);
+  box-shadow: 7px 7px 2px 0px rgba(0,0,0,100);
   line-height:2;
 }
 .Bcont{
@@ -62,7 +63,7 @@ h1{
   width: 20%;
   border-radius: 5%;
   margin: 10px;
-  box-shadow: 7px 7px 0px 0px rgba(0,0,0,100);
+  box-shadow: 7px 7px 2px 0px rgba(0,0,0,100);
 }
 
 #headShotimg{
