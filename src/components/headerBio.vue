@@ -1,10 +1,17 @@
 <template>
-  <div class="Bcont" id="headShot">
-      <img src="../assets/headshot.jpg">
-  </div>
-  <div class="Bcont">
-    <h1>Michael Penfield</h1>
-    <p id="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, pariatur tenetur rem itaque provident accusamus molestiae sint modi, corporis veritatis ipsam. Praesentium aut dolore veniam harum magni numquam molestias. A?</p>
+  <div id="bigContainer">
+   <div class="Bcont" id="headShot">
+       <img id="headShotimg" src="../assets/headshot.jpg" >
+       <div>
+          <ul>
+            <li>list</li>
+          </ul>
+       </div>
+   </div>
+   <div class="Bcont">
+     <h1>Michael Penfield</h1>
+     <p id="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, pariatur tenetur rem itaque provident accusamus molestiae sint modi, corporis veritatis ipsam. Praesentium aut dolore veniam harum magni numquam molestias. A?</p>
+   </div>
   </div>
 </template>
 
@@ -31,21 +38,44 @@ ul {
 li {
   display: inline-block;
   margin: 0 10px;
+  color: #EFE1D1;
 }
-a {
-  color: #42b983;
+h1{
+  font-size: 50px
 }
+
 
 #bio{
-  width: 50%;
-  margin:auto
+  margin:20px;
+  border: 1px solid black;
+  border-radius: 5%;
+  box-shadow: 7px 7px 0px 0px rgba(0,0,0,100);
+  line-height:2;
 }
 .Bcont{
-
+  width: 70%;
+  float: left;
 }
 
 #headShot{
-  background: blue
+  background: #3F2E3E;
+  width: 20%;
+  border-radius: 5%;
+  margin: 10px;
+  box-shadow: 7px 7px 0px 0px rgba(0,0,0,100);
+}
+
+#headShotimg{
+  border-radius: 100%;
+  max-height: 70%;
+  max-width:70%;
+  margin: 20px;
+}
+
+#bigContainer{
+  width: 80%;
+  margin: auto;
+
 }
 
 </style>
