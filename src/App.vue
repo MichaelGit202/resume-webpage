@@ -1,6 +1,8 @@
 <template>
-  <headerbio></headerbio>
-  <testComp></testComp>
+  <div id="entrySection">
+    <headerbio></headerbio>
+    <testComp></testComp>
+  </div>
 </template>
 
 <script lang="ts">
@@ -23,8 +25,14 @@ export default defineComponent({
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #EFE1D1;
+  color: #141a0f;
   margin-top: 60px;
 
 }
+
+#entrySection{
+  background-color: black
+
+}
+
 </style>
