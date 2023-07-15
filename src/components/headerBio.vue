@@ -1,23 +1,58 @@
 <template>
   <div id="bigContainer">
-   <div class="Bcont" id="headShot">
+   <h1 id="MobileName">
+      Michael Penfield
+   </h1>
+    <div class="Bcont" id="headShot">
        <img id="headShotimg" src="../assets/headshot.jpg" >
        <div>
-          <ul>
-            <li class="list">current</li>
-            <ul class="subList1">
-              <li>LeaderShip</li>
+            <ul class="list">
+              <li>Experience</li>
                 <ul>
                   <li>
-                    CompSci Club
+                    TruckLite / PSI International
+                  </li> 
+                  <li>
+                    Compsci Tutoring
+                  </li>
+                  <li>
+                    Seinor Project (ECTS)
+                  </li>
+                </ul> 
+              
+              <li>LeaderShip & Involvement</li>
+                <ul>
+                  <li>
+                    CompSci/ACM Club
+                  </li>
+                  <li>
+                    Lambda Sigma
+                  </li>
+                  <li>
+                    Ambassator 
                   </li>
                 </ul>
+                  
+              <li>Education</li>
+                <ul>
+                  <li>
+                     Penn State
+                  </li>
+                  <li>
+                      Erie County Technical School
+                  </li>
+                  <li>
+                      Girard HighSchool
+                  </li>
+                </ul>
+
+                
             </ul> 
-          </ul>
+
        </div>
    </div>
    <div class="Bcont">
-     <h1>Michael Penfield</h1>
+     <h1 id="name">Michael Penfield</h1>
      <div id="bio">
         <p>
            I am a sophmore at Penn State Behrend, persuing a dual major in Computer Science and Mathematics. With my education I plan
@@ -48,12 +83,18 @@ h3 {
   margin: 40px 0 0;
 }
 ul {
-
+  margin-bottom: 15px;
 }
 
 li {
   color: #EFE1D1;
-  width: 20%;
+  text-align:left;
+  line-height:1.5;
+}
+
+.list{
+  margin: auto;
+  width: 70%;
 }
 
 h1{
@@ -107,8 +148,45 @@ p{
 
 }
 
+#MobileName{
+  display:none;
+}
 
 
+@media only screen and (max-width: 600px) {
+  #bigContainer{
+    width: 100%;
+    margin: auto;
+    align-content: center;
+    align-items: center;
+  }
+  
+  #bio {
+    width: 100%;
+    margin: 10px;
+    line-height: 1.5;
+  }
+
+  #headShot{
+    width: 100%;
+    margin: auto
+  }
+
+  #name{
+    display: none;
+  }
+
+  #MobileName{
+    display:block;
+    text-align: center;
+    margin:auto;
+    font-size: 60px
+  }
+  .Bcont{
+    width: 80%;
+  }
+
+}
 
 
 </style>

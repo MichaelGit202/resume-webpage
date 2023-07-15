@@ -26,12 +26,24 @@ export default defineComponent({
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #141a0f;
-  margin-top: 60px;
 
 }
 
 #entrySection{
-  background-color: black
+  
+} 
+
+
+@media only screen and (max-width: 600px) {
+  
+  #entrySection{
+    width: 100%;
+    align-items: center;
+    margin: auto;
+  } 
+
+
+
 
 }
 
