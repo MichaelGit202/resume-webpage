@@ -45,8 +45,7 @@
                       Girard HighSchool
                   </li>
                 </ul>
-
-                
+                <br>
             </ul> 
 
        </div>
@@ -54,13 +53,32 @@
    <div class="Bcont">
      <h1 id="name">Michael Penfield</h1>
      <div id="bio">
+        <h2>Bio</h2>
         <p>
            I am a sophmore at Penn State Behrend, persuing a dual major in Computer Science and Mathematics. With my education I plan
-           on persuing a career in data science and machine learning.  Growing up in Erie, Pennsylvania, I have developed a love for nature 
+           on seeking a career in data science or machine learning.  Growing up in Erie, Pennsylvania, I have developed a love for nature 
            and in my spare time I enjoy hiking and going out on the lake.  My acedemic journey has equipped me with a solid foundation in my
            fields of study and I am seeking opportunities to apply my knowlege and get real-world experience. I am a excited to one day be able to 
-           make an impact on the world
+           make an impact on the world by harnessing the power of machine learning.
         </p>
+
+        <h3>Languages & Experience:</h3>
+        <!-- C++ vue js Python SQL linux java visual basic -->
+        <!-- add php and javascript -->
+        <img class="icon" src="../assets/Clogo.png">
+        <img class="icon" src="../assets/Vue.js_Logo_2.svg.png">
+        <img class="icon" src="../assets/typescrip.png">
+        <img class="icon" src="../assets/Python-logo-notext.svg.png">
+        <br>
+        <img class="icon" src="../assets/logo.svg">
+        <img class="icon" src="../assets/linux.png">
+        <img class="icon" src="../assets/Java.png">
+        <img class="icon" src="../assets/vb.png">
+        <br><br>
+
+
+
+
       </div>
    </div>
   </div>
@@ -71,16 +89,24 @@ import { defineComponent } from 'vue';
 
 export default defineComponent({
   name: 'headerBio',
-  props: {
-    msg: String,
-  },
-});
+})
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.icon {
+  height: 15%;
+  width: 15%;
+  margin:auto;
+  margin-left: 50px;
+}
+
 h3 {
   margin: 40px 0 0;
+  color: antiquewhite
+}
+h2{
+  color: antiquewhite
 }
 ul {
   margin-bottom: 15px;
@@ -111,7 +137,6 @@ p{
 }
 
 #bio{
-  margin: 10px;
   padding: 20px;
   margin:20px;
   border: 1px solid black;
@@ -119,7 +144,8 @@ p{
   box-shadow: 7px 7px 10px 1px rgb(28, 16, 44);
   line-height:2;
   background-image: linear-gradient(rgb(34, 20, 53), rgb(0, 0, 0));
-  color: #d4d4d4
+  color: #d4d4d4;
+  font-size: large;
 }
 .Bcont{
   width: 70%;
@@ -153,23 +179,39 @@ p{
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 950px) {
+  p{
+    text-align: center;
+  }
+  h3{
+    text-align: center;
+    font-size: larger;
+  }
+  .icon {
+    height: 35%;
+    width: 35%;
+    margin:auto;
+    margin-left: 10px;
+  }
+  
   #bigContainer{
-    width: 100%;
-    margin: auto;
-    align-content: center;
-    align-items: center;
+    width: 98%;
+    align-self: center;
+    margin: 0px;
   }
   
   #bio {
     width: 100%;
-    margin: 10px;
+    text-align: center;
     line-height: 1.5;
+    font-size: 20px;
+    margin:20px auto
   }
 
   #headShot{
     width: 100%;
-    margin: auto
+    margin: auto;
+    font-size: 20px;
   }
 
   #name{
@@ -183,7 +225,10 @@ p{
     font-size: 60px
   }
   .Bcont{
-    width: 80%;
+    margin:auto;
+    width: 100%;
+    align-content: center;
+    float: left;
   }
 
 }

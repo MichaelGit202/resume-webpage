@@ -3,18 +3,23 @@
     <headerbio></headerbio>
     <testComp></testComp>
   </div>
+  <div class="section">
+    <TruckLite></TruckLite>
+  </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
 import testComp from './components/test.vue';
 import headerbio from './components/headerBio.vue';
+import TruckLite from './components/TruckLite.vue';
 
 export default defineComponent({
   name: 'App',
   components: {
     testComp,
-    headerbio
+    headerbio,
+    TruckLite
   }
 });
 </script>
@@ -30,11 +35,19 @@ export default defineComponent({
 }
 
 #entrySection{
-  
+  display:flex;
+  flex-direction: column;
 } 
 
+.section{
+  display:flex;
+  flex-direction: column;
+  margin: auto;
+  width: 80%
+}
 
-@media only screen and (max-width: 600px) {
+
+@media only screen and (max-width: 950px) {
   
   #entrySection{
     width: 100%;
@@ -42,6 +55,9 @@ export default defineComponent({
     margin: auto;
   } 
 
+  .section{
+    width: 100%
+  }
 
 
 
