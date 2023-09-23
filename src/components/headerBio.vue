@@ -16,7 +16,7 @@
                     Compsci Tutoring
                   </li>
                   <li>
-                    Seinor Project (ECTS)
+                    Senior Project (ECTS)
                   </li>
                 </ul> 
               
