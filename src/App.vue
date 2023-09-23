@@ -6,6 +6,17 @@
   <div class="section">
     <TruckLite></TruckLite>
   </div>
+  <br>
+  <div class="section">
+    <tutorExp></tutorExp>
+  </div>
+  <br>
+  <div class="section">
+    <ectsWeb></ectsWeb>
+  </div>
+  <div class="section">
+    <acmComp></acmComp>
+  </div>
 </template>
 
 <script lang="ts">
@@ -13,13 +24,19 @@ import { defineComponent } from 'vue';
 import testComp from './components/test.vue';
 import headerbio from './components/headerBio.vue';
 import TruckLite from './components/TruckLite.vue';
+import tutorExp from './components/CompSci.vue';
+import ectsWeb from './components/ECTSweb.vue'
+import acmComp from './components/acmcpsci.vue'
 
 export default defineComponent({
   name: 'App',
   components: {
     testComp,
     headerbio,
-    TruckLite
+    TruckLite,
+    tutorExp,
+    ectsWeb,
+    acmComp
   }
 });
 </script>
@@ -43,7 +60,11 @@ export default defineComponent({
   display:flex;
   flex-direction: column;
   margin: auto;
-  width: 80%
+  width: 70%
+}
+
+p{
+  font-size: 21px;
 }
 
 

@@ -34,27 +34,38 @@
           <span class="dot" v-on:click="currentSlide(1)"></span>
           <span class="dot" v-on:click="currentSlide(2)"></span>
           <span class="dot" v-on:click="currentSlide(3)"></span>
+          <span class="dot" v-on:click="currentSlide(4)"></span>
+          <span class="dot" v-on:click="currentSlide(5)"></span>
           </div>
           <!-- Full-width images with number and caption text -->
           <div class="mySlides fade">
-            <div class="numbertext">1 / 3</div>
-            <img class="Slimage" src="../assets/headshot.jpg" >
-            <div class="text">Caption Text</div>
+            <div class="numbertext">1 / 4</div>
+            <img class="Slimage" src="../assets/TL2.png" >
+            <div class="text">Main Panel to query trucks </div>
           </div>
           
           <div class="mySlides fade">
-            <div class="numbertext">2 / 3</div>
-            <img class="Slimage" src="../assets/logo.png" >
-            <div class="text">Caption Two</div>
+            <div class="numbertext">2 / 4</div>
+            <img class="Slimage" src="../assets/TL3.png" >
+            <div class="text">Truck data from population filters from the past month</div>
           </div>
           
           <div class="mySlides fade">
             <div>
-            <div class="numbertext">3 / 3</div>
-            <img class="Slimage" src="../assets/headshot.jpg">
-            <div class="text">Caption Three</div>
+            <div class="numbertext">3 / 4</div>
+            <img class="Slimage" src="../assets/TL4.png">
+            <div class="text">Blend of population data and manual override for calculations</div>
             </div>
           </div>
+
+          <div class="mySlides fade">
+            <div>
+            <div class="numbertext">4 / 4</div>
+            <img class="Slimage" src="../assets/TL5.png">
+            <div class="text">Display of cost of a truck in a month</div>
+            </div>
+          </div>
+
           
           <!-- Next and previous buttons -->
           <a class="prev" v-on:click="plusSlides(-1)">&#10094;</a>
@@ -68,7 +79,7 @@
 
 <script lang="ts">
 
-import { defineComponent, HtmlHTMLAttributes } from 'vue'
+import { defineComponent } from 'vue'
 
 export default defineComponent({
   name: "TruckLite",
@@ -138,7 +149,7 @@ export default defineComponent({
 }
 
   #info{
-    width: 80%;
+    width: 70%;
     align-items: center;
     margin:auto;
   } 
@@ -153,8 +164,7 @@ export default defineComponent({
   }
 
   .Slimage{
-    max-height: 70%;
-    max-width: 70%;
+    max-width: 100% !important;
     border-Radius: 30px
   }
 
@@ -193,8 +203,6 @@ export default defineComponent({
 
 /* Next & previous buttons */
 .prev, .next {
-  transform: translate(-600%,0%);
-  width:150%;
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -207,6 +215,10 @@ export default defineComponent({
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
+  z-index: 10;
+  float: left;
+  margin-right: 35%;
+  margin-left:-35%;
 }
 
 /* Position the "next button" to the right */
@@ -237,7 +249,8 @@ export default defineComponent({
   padding: 8px 12px;
   position: absolute;
   top: 0;
-  transform: translate(1300%, 100%);
+  margin-left: 63%;
+  margin-top: 3%;
   background-color: black;
   border-radius: 30px;
 }
@@ -284,7 +297,7 @@ p{
 }
 
 .mySlides{
-  width:80%;
+  width:100%;
   display:flex;
 }
 
@@ -298,6 +311,7 @@ p{
 
   #logoContainerMobile{
   display: block;
+  -webkit-filter: invert(0%);
   } 
 
   #logoContainer{
@@ -333,6 +347,15 @@ p{
   p{
     text-align: center;
   }
+
+  /*.prev,.next{
+    margin-right: 25%;
+    margin-left:-25%;
+  }
+
+  .numbertext{
+    margin-left: 63%;
+  }*/
 }
 
 

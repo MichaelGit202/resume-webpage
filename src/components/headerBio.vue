@@ -10,7 +10,7 @@
               <li>Experience</li>
                 <ul>
                   <li>
-                    TruckLite / PSI International
+                    TruckLite / Clarience Tech
                   </li> 
                   <li>
                     Compsci Tutoring
@@ -54,7 +54,7 @@
      <h1 id="name">Michael Penfield</h1>
      <div id="bio">
         <h2>Bio</h2>
-        <p>
+        <p class="bioText">
            I am a sophmore at Penn State Behrend, persuing a dual major in Computer Science and Mathematics. With my education I plan
            on seeking a career in data science or machine learning.  Growing up in Erie, Pennsylvania, I have developed a love for nature 
            and in my spare time I enjoy hiking and going out on the lake.  My acedemic journey has equipped me with a solid foundation in my
@@ -101,6 +101,11 @@ export default defineComponent({
   margin-left: 50px;
 }
 
+.bioText{
+  width:80%;
+  margin:auto;
+}
+
 h3 {
   margin: 40px 0 0;
   color: antiquewhite
@@ -137,6 +142,7 @@ p{
 }
 
 #bio{
+  align-content: center;
   padding: 20px;
   margin:20px;
   border: 1px solid black;
@@ -182,6 +188,7 @@ p{
 @media only screen and (max-width: 950px) {
   p{
     text-align: center;
+    
   }
   h3{
     text-align: center;
